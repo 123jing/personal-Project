@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/base.css">
+		
+		<script>
+//			验证用户名登录，绑定登录按钮的单击事件onclick
+			function check_user(){
+				var phone=document.getElementById("phone").value;
+				var upwd=document.getElementById("upwd").value;
+				if(phone==""){
+					document.getElementById("errors_show").innerHTML="<span style='color:red;'>华为账号不能为空</span>";
+				}else if(upwd==""){
+					document.getElementById("errors_show").innerHTML="<span style='color:red;'>密码不能为空</span>";
+				}												
+			}			
+		
+  </script>			
+			
+	</head>
+	<body>
+
+		<!--一、头部-->
+		<div id="login_head">
+			<div>
+				<img src="img/login/huaweiLogo.png"/>
+				<b>|</b>
+				<p>华为商城</p>
+			</div>
+		</div>
+
+		<!--二、整体body-->
+		<div id="login_body">
+			<div id="login_body_wrap">
+				<!--右边的整个白色登录框-->
+				<div id="login_input">
+					<!--1、账号/扫码登录-->
+					<div class="login_style">
+						<p>账号登录</p>
+						<div>
+							<a href="#">扫码登录</a>
+						</div>
+					</div>
+					<!--2、登录主体框-->
+					<table></table>
+					<!--解决子元素外边距溢出-->
+					<div id="login_box">
+						<form>
+							<table>
+								<!--第一行-->
+								<tr>
+									<td id="errors_show" style="font-size:12px"></td>
+								</tr>
+								<!--第二行-->
+								<tr>
+									<td>
+										<input type="text" id="phone" value="13501234560" placeholder="手机号/邮件地址" minlength="4" maxlength="50" />
+									</td>
+								</tr>
+								<!--第三行-->
+								<tr>
+									<td>
+										<input type="password" id="upwd" value="123456" placeholder="密码" minlength="8" maxlength="32"/>
+									</td>
+								</tr>
+								<!--第四行:按钮验证-->
+								<!--<tr>
+									<td>
+										<div id="login_test">
+											<span class="btn_test"></span>
+											<span class="btn_txt">点击按钮进行验证</span>
+										</div>
+									</td>
+								</tr>-->
+								<!--第五行:记住账号-->
+								<tr>
+									<td>
+										<div id="login_remember">
+											<input type="checkbox" class="chb" />
+											<!--<span class="caret"></span>-->
+											<span class="remember">记住华为账号</span>
+										</div>
+									</td>
+								</tr>
+								<!--第六行:登录按钮(设置为button，不要设为submit)-->
+								<tr>
+									<td>
+										<input type="button" class="btn_login" value="登录" onclick="check_user()"/>
+									</td>
+								</tr>
+								<!--第七行:更多-->
+								<tr>
+									<td>
+										<p class="more">更多</p>
+									</td>
+								</tr>
+								<!--第八行:注册账号/忘记密码-->
+								<tr>
+									<td>
+										<div id="register-forget">
+											<a href="register.html" target="_self">注册账号</a><span>|</span>
+											<a href="#">忘记密码？</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</form>
+
+						<!--其他方式登录-->
+						<div id="other_login">
+							<span>其他方式登录</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--一三、尾部-->
+		<div id="login_foot">
+			<div class="login_foot_list">
+				<a href="#">用户协议</a><span>|</span>
+				<a href="#">隐私政策</a><span>|</span>
+				<a href="#">常见问题</a>
+			</div>
+			<span>Copyright&copy;2011-2017 华为技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9</span>
+		</div>
+		
+<script src="js/jquery.js"></script>
+<script src="js/login.js"></script>
+
+	</body>
+
+</html>

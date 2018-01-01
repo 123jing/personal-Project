@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>li的悬浮hover事件——扩大scale/边框阴影box-shadow</title>
+	<style>
+		ul,li{
+			text-decoration: none;
+		}
+		.inner li{
+		width:200px;
+		height:200px;
+		border:1px solid ;
+		margin-right: 20px;
+		float:left;
+		transition:all 1s;
+		}
+		.inner li:hover{
+			 transform:scale(1.02);
+			 box-shadow: 2px 2px 20px #A8A8A8;
+			 
+		}
+		
+	</style>
+	
+	</head>
+	<body>
+						
+		<ul class="inner">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+				
+	</body>
+</html>

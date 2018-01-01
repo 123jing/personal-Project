@@ -1,0 +1,192 @@
+/*头部*/
+#login_head{
+	width:100%;	 
+}
+#login_head>div{
+	width:1200px;
+	height:70px;
+	line-height:70px;  /*使华为商城文本内容垂直居中*/
+	margin:0 auto;
+}
+#login_head img{
+	margin-top:	13.5px;
+}
+#login_head img,b,p{
+	float:left;
+	display: block; 
+	margin-right: 20px; 
+}
+#login_head b{
+	color:#E4E4E4;
+}
+#login_head p{
+	font-size:18px;
+}
+
+
+/*中间部分body*/
+#login_body{
+	height:590px;
+	background: url(../img/login/untitled1.bmp);   /*背景图*/
+}
+#login_body_wrap{
+	width:1200px;
+	margin:0 auto;
+	/*position:relative;*/		
+} 
+/*右边白色登录框*/
+#login_input{
+	width:380px;
+	height:530px;
+	background: #FFFFFF;	
+	float:right;
+	margin-top:30px;
+	/*position:absolute;
+	top:30px;
+	right:0;*/	
+}
+div.login_style{
+	cursor: pointer;
+	height:70px;
+	line-height: 70px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+div.login_style p{
+	color:red;
+	width:190px;
+	height:20px;
+	line-height: 20px;
+	text-align: center;
+	border-right:3px solid #E4E4E4;
+	margin-top:25px;	
+}
+div.login_style a{
+	width:190px;
+	height:20px;
+	margin-left: 50px;
+	color:#333333;
+}
+div.login_style>div:hover a{
+	color:red;
+}
+
+/*登录的整体table*/
+#login_box{
+	width:330px;
+	margin-left: 20px;
+	/*margin-top:20px;*/
+}
+#errors_show{         /*错误提示框*/
+	/*border:1px solid;*/
+}
+#upwd,#phone,#login_test{
+	width:330px;
+	height:45px;
+	outline: none;
+}
+#upwd,#phone{
+	border:none;
+	border-bottom:1px solid #cccccc;
+}
+#login_test{
+	line-height: 45px;
+	border: 1px solid #cccccc;
+	margin-top:10px;
+	cursor: pointer;
+}
+#login_test span{
+	margin-left:20px ;
+}
+.btn_test{
+	display: inline-block;
+	width:13px;
+	height:13px;
+	background: #cccccc;
+}
+.btn_txt{
+	color:#666666;
+	font-size: 16px;
+}
+#login_remember{
+	margin-top:20px;
+cursor:pointer;
+}
+/*.caret{   /*？？？？设置账号记住有问题？？？？
+	display: inline-block;
+	width:15px;
+	height:15px;
+ background:#eeeeee;
+ border-radius:50%;
+ vertical-align: middle;
+ box-shadow: 2px 2px 2px #333333;
+}
+.caret:active{
+	color:blue;
+}*/
+.remember{
+	font-size: 14px;
+}
+.btn_login{
+	border:none;
+	outline:none;
+	width:330px;
+	height:45px;
+	margin-top:10px;
+	color:#ffffff;
+	background: #B40707;
+	font-size:14px;
+ /*border-radius: 10px;*/
+}
+.btn_login:hover{
+	cursor: pointer;
+	background:#C70000;
+}
+.more{
+	/*display: inline-block;*/
+	margin-top:15px;
+	float:right;
+	color:#007DFF;
+	font-size:14px;
+}
+#register-forget{
+	margin-top:8px;	
+	font-size:14px;
+	text-align: center;
+}
+#register-forget a{
+	color:#007DFF;
+}
+#register-forget span{
+	margin:0 10px;
+  color:#E4E4E4;
+}
+#other_login{
+	margin-top:30px;
+	font-size:14px;
+	color:#A4A4A4;
+	text-align:center;
+}
+
+/*尾部*/
+#login_foot{
+	width:1200px;
+	margin:0 auto;
+	text-align: center;
+}
+.login_foot_list{
+	margin-top:30px;
+	font-size: 14px;
+	color:#A4A4A4;
+}
+.login_foot_list span{
+	margin:0 10px;
+}
+#login_foot span{
+	display: inline-block;
+	margin-top:10px;
+	font-size: 12px;
+	color:#A4A4A4;
+}
+
+

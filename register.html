@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/register.css">
+		<link rel="stylesheet" href="css/base.css">
+		
+		
+		
+	</head>
+	<body>
+		
+		
+		<!--一、头部-->
+		<div id="register_head">
+			<div>
+			<img src="img/register/head-top.png" alt="" />
+			<b>|</b>
+			<p>华为商城</p>
+			</div>
+		</div>
+		
+		
+		<div background="#F2F2F2">
+		<!--二、注册头部：手机号/电子邮箱-->
+		<div id="register_body_head">			
+			  <a href="register.html">手机号</a>
+				<a href="register2.html">电子邮箱</a>	
+			<div class="register_login">
+				<span>已有华为账号</span>
+				<a href="login.html">登录></a>
+			</div>			
+		</div>
+		<!--三、注册body整体-->
+		<div id="register_body">
+			<div id="register_body_input">
+				
+				<!--1、国家-->
+				<div class="row first_row">
+				<span class="subtitle">
+					<span class="input_left">国家</span>
+					<!--<span></span>-->
+				</span>
+				<span class="register_txt">
+					<span>中国</span>
+					<span class="caret1"></span>
+				</span>
+				</div>
+				<!--2、+86（中国）-->
+				<div class="row second_row">
+				<span class="subtitle">
+					<span>+86(中国)</span>
+					<span class="caret2"></span>
+				</span>								
+				<span class="register_txt">
+					<input type="text" class="user_data" placeholder="请输入手机号" />					
+				</span>
+				</div>
+				<!--3、图形验证码-->
+				<div class="row third_row">
+				<span class="subtitle">
+					<span>图</span>
+					<span>形</span>
+					<span>验</span>
+					<span>证</span>
+					<span>码</span>
+				</span>								
+				<span class="register_txt code_test">
+					<input type="text" class="user_data" placeholder="请输入图形验证码" />	
+					<!--<img src="img/register/code.bmp" alt="" />-->
+				</span>
+				</div>
+				
+				<!--4、短信验证码-->
+				<div class="row forth_row">
+				<span class="subtitle">
+					<span>短</span>
+					<span>信</span>
+					<span>验</span>
+					<span>证</span>
+					<span>码</span>
+				</span>								
+				<span class=" register_txt code_test">
+					<input type="text" class="user_data" placeholder="请输入短信验证码" />		
+					<!--<a href="#">获取验证码</a>-->
+				</span>
+				</div>
+				<!--5、用户密码-->
+				<div class="row fifth_row">
+				<span class="subtitle">					
+					<span>密</span>
+					<span>码</span>
+				</span>								
+				<span class="register_txt">
+					<input type="text" class="user_data" placeholder="请输入密码" />					
+				</span>
+				</div>
+				<!--6、密码确认-->
+				<div class="row six_row">
+				<span class="subtitle">					
+					<span>确</span>
+					<span>认</span>
+					<span>密</span>
+					<span>码</span>
+				</span>								
+				<span class="register_txt">
+					<input type="text" class="user_data" placeholder="请再次输入密码" />					
+				</span>
+				</div>
+				<!--7、用户性别-->
+				<!--<div class="ugender">
+				用户性别：<select name="gender" id="gender">
+					<option value="1">男</option>
+					<option value="0">女</option>
+				</select>
+				</div>				
+			</div>	-->
+			<!--8、注册按钮-->
+			<input type="submit" class="btn_register" value="注册" />			
+		</div>
+		</div>
+		
+		<!--四、尾部-->
+		<hr id="hr"></hr>
+		<div id="register_foot">
+			<div class="register_foot_list">
+				<a href="#">用户协议</a><span>|</span>
+				<a href="#">隐私政策</a><span>|</span>
+				<a href="#">常见问题</a>				
+			</div>
+		<span>Copyright&copy;2011-2017 华为技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9</span>	
+		
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/register.js"></script>		
+		
+	</body>
+</html>

@@ -1,0 +1,170 @@
+
+/*头部*/
+#register_head{
+	width:100%;
+	background:#333333 ;
+}
+#register_head>div{
+	width:1200px;
+	height:70px;
+	line-height: 70px;
+	margin:0 auto;
+	color:#FFFFFF;		
+}
+#register_head img,b,p{
+	float:left;
+}
+#register_head img{
+	margin-top:20px;
+}
+#register_head b{
+	margin:0 20px;
+}
+#register_head p{
+	font-size:18px;
+}
+		
+/*注册头部：手机号/电子邮箱*/
+#register_body_head{
+	width:1200px;
+	margin:0 auto;
+	margin-top:20px;
+}
+#register_body_head>a{
+	display: inline-block;  /*a可以设置高宽*/
+	width:150px;
+	height:35px;
+	line-height: 35px;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 16px;;
+	background: #A4A4A4;
+	color:#FFFFFF;
+}
+#register_body_head a:first-child{
+	background: #B40707;
+}
+.register_login{
+	float:right;
+}
+.register_login a{
+	color:#007DFF;
+}
+#register_body{
+	width:1200px;
+	height:525px;
+	margin:0 auto;
+	background: #ffffff;
+}
+#register_body_input{
+	width:420px;
+	height:365px;
+	margin-top:40px;
+	margin-left: 390px;	
+}
+.row{
+	border:1px solid #D9D9D9;
+	display: flex;
+}
+.input_left{
+	text-align: justify;
+}
+span.subtitle{
+	display: flex;
+	width:125px;
+	height:45px;
+	line-height: 45px;
+	border-right:1px solid #D9D9D9;
+	justify-content: space-around;
+	position:relative;
+	padding:0 10px;
+}
+span.register_txt{
+	height:45px;
+	line-height: 45px;
+	position: relative;
+}
+span.register_txt span:first-child{
+	margin-left:20px;
+}
+/*span.register_txt img{
+	float:right;
+}*/
+.caret1{
+	border:7px solid transparent;
+	border-top-color:#C6DCF9;
+	position:absolute;
+ top:20px;
+ right:-220px;
+}
+.second_row{
+	margin-top:10px;
+}
+.third_row{
+	margin-top:30px;
+}
+.forth_row{
+	margin-top:10px;
+}
+.fifth_row{
+	margin-top:30px;
+}
+.six_row{
+	margin-top:10px;
+}
+.caret2{
+  border:7px solid transparent;
+	border-top-color:#C6DCF9;
+	position:absolute;
+ top:20px;
+ right:10px;
+}
+.user_data{
+	width:250px;
+	margin-left:20px;
+	border:none;
+	outline: none;
+}
+/*.ugender{
+	margin-top:10px;
+}*/
+.btn_register{
+	border:none;
+	outline:none;
+	width:200px;
+	height:45px;
+	color:#ffffff;
+	background: #B40707;
+	font-size:14px;
+  display: block;
+  /*margin:55px auto;*/
+}
+
+ 
+/*尾部*/
+#hr{
+	width:1200px;
+	margin:0 auto;
+	/*margin-top:50px;*/
+	color:#D7D7D7;
+}
+#register_foot{
+	width:1200px;
+	margin:0 auto;
+	text-align: center;
+}
+.register_foot_list{
+	margin-top:30px;
+	
+	font-size: 14px;
+	color:#A4A4A4;
+}
+.register_foot_list span{
+	margin:0 10px;
+}
+#register_foot span{
+	display: inline-block;
+	margin-top:10px;
+	font-size: 12px;
+	color:#A4A4A4;
+}

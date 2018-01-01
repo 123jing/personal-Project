@@ -1,0 +1,50 @@
+
+
+一、登录功能页面：
+login.html  login.css  login.php  islogin.php  login.js  插件jquery.js
+
+
+
+login.html:
+1.头部：logo
+
+
+
+2.中间部分：背景图+登录框
+
+
+3.尾部：
+
+
+
+login.php:
+1:获取二个参数  phone  upwd
+2:创建用户名正则表达式  字母数字4,32 /[a-zA-Z0-9]{4,32}$/
+3:验证用户名 和 密码
+4:创建sql语句
+5:发送sql语句
+6:获取数据库返回结果
+7: 判断sql语句是否有错
+8:判断返回结果
+9:依据结果发送json格式数据
+
+
+islogin.php:
+SESSION有关，保存用户编号uid
+
+login.js:
+1:获取登录按钮
+2:绑定点击事件
+3:获取用户名和密码
+4:创建正则表达式验证用户名和密码
+5:发送ajax请求 data/users/login.php
+6:判断登录是否成功
+7:成功跳转 project.html
+
+jquery.js：
+若不引用jquery.js文件，控制台会报错：没有定义 $ ——》undefined
+
+
+
+
+

@@ -1,0 +1,391 @@
+body{
+	background: #FFFFFF;
+}
+/*header头部布局*/
+.head_box{
+	width:100%;
+	height:35px;
+	line-height:35px;
+}
+.head_box #head_wrap{
+	width:1200px;
+	height:35px;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	font-size:12px;
+}
+
+/*头部链接*/
+ #head_wrap a{
+	color:#A4A4A4;
+	margin-left:5px;
+}
+#head_wrap a:hover{
+	color:#CA151D;	
+}
+#head_wrap b{
+	color:#E4E4E4;
+	margin-left:5px;
+}
+
+/*头部导航*/
+.head_box #head_wrap #head_nav{
+	height:35px;	
+	line-height:35px;
+}
+#head_nav li{
+	float: left;
+}
+.dropdown{
+	width:76px;
+	position: relative;
+	margin-top:-30px;
+    z-index:310; /* 悬浮在上*/
+}
+.dropdown .h{
+	position: relative;
+}
+.icon-dropdown{
+	position: relative;
+}
+.icon-cart{
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+	border-top:6px solid #999999;
+	position: absolute;
+    top:15px;
+    right:10px;	
+}
+.dropdown .b{
+	display: none;
+	position: absolute;
+	top:37px;
+	right:0;
+	background: #fff;
+	border:1px solid #EDEDED;
+	box-shadow:0 2px 6px 0 rgba(121,121,121,0.26);
+}
+.dropdown:hover .h{
+	border:1px solid #EDEDED;
+	border-bottom:1px solid #fff;
+	background: #fff;
+	z-index:100;
+}
+.dropdown:hover .b{
+	display: block;
+}
+.b a:hover{
+	color: #CA141D !important;
+}
+.dropdown:hover .icon-cart{
+	border-bottom:6px solid #999999;
+	border-top:0;
+}
+.dropdown-more{
+	width:144px;
+	padding:9px;
+	text-align: center;
+	line-height:32px;
+	color:#333 !important;
+}
+.dropdown-more dl{
+	border-bottom: 1px solid #eaeaea;
+    padding-bottom: 5px;
+}
+.code{
+	padding-top:22px;
+	color:#717171;
+}
+.dropdown-more a{
+	color:#3a3a3a !important;
+}
+
+/*头部右边的列表*/
+.head_box #head_wrap #head_right{
+	height:35px;
+	line-height:35px;
+	display:flex;
+	justify-content: space-between;	
+}
+#head_right #shop_car{
+	padding-left: 5px;
+}
+#head_right #shop_car>img{
+	margin-top:-2px;
+	vertical-align: middle;
+}
+#head_right #head_car{
+	position:relative;
+}
+#car_content{ 
+	display: none;
+	z-index:100;
+	height:200px;
+	width:400px;
+	position:absolute;
+	right:0;
+	top:30px;	
+	border:1px solid #ededed;	
+	background: #fff;
+	z-index:200;
+	-webkit-box-shadow: 0 2px 6px 0 rgb(121,121,121,0.26);
+	-moz-box-shadow: 0 2px 6px 0 rgb(121,121,121,0.26);	
+}
+#car_content img{
+	display: block;
+	margin: 20px auto;
+}
+#shop_car:hover #car_content{
+    display: block;	
+}
+#shop_car:hover{
+	border:1px solid #EDEDED;
+	border-bottom:none !important;
+	background: #fff;
+	z-index:100;
+	box-shadow: 0 2px 6px 0 rgb(121,121,121,0.26);
+} 
+
+/*大头部布局*/
+.main_head_box{
+	width:100%;
+	height:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.main_head_box #menu_wrep{
+	width:1200px;
+	margin:0 auto;
+	display:flex;
+	justify-content: space-between;	
+}
+.main_head_box #menu_wrep #logo{
+	vertical-align: middle;
+	width:240px;
+	margin-right:-80px;
+}
+.main_head_box #menu_wrep #menu_nav ul{
+	display:flex;
+	justify-content: space-between;
+	font-size:16px;
+	height:40px;
+	line-height:40px;.actice
+}
+#menu_nav ul li{
+	margin-right:20px;
+}
+#menu_nav ul a{
+	color:#3A3A3A;
+}
+#menu_nav ul a:hover{
+	border-bottom:2px solid #CA151D;
+	bottom: 6px;
+	color:#CA151D;
+}
+#menu_right{
+	position:relative; /*为了文本框里的字绝对定位*/	
+}
+#search_bar{
+	border-bottom:1px solid #ddd;
+	height:33px;
+	margin-top:2px;
+}
+#search_bar span{
+	float: right;
+	display: block;
+	width:30px;
+	height:30px;
+	background: url(../img/complex2.png) 0px -20px no-repeat;
+	margin-left:20px;
+}
+.search_input{
+	width:299px;
+	height:27px;
+	line-height:27px;
+	font-size:100%;
+	color:#3a3a3a;
+	padding-left:11px;
+	border:none;
+	outline:none;
+	background: none;
+}
+#input_word{
+position: absolute;
+top:10px;
+left:140px;
+font-size :12px;
+}
+#input_word a{
+	display: inline-block;
+	margin-right:10px;
+	padding:2px;
+	background:#EEEEEE;
+	color:#a4a4a4;
+}
+#input_word a:hover{
+	color:#CA141D;
+}
+
+.g{
+	margin-top:20px;
+	width:100%;
+}
+.breadcrumb{
+	width:1200px;
+	margin:0 auto;
+	font-size: 12px;
+	color:#bbb;
+}
+.breadcrumb a{
+	color:#666;
+}
+
+.product{
+	width:1180px;
+	margin:10px auto 0;
+	/*margin-top: 10px;*/
+}
+.left{
+	
+}
+.right{
+	width:720px;
+}
+.product-meta h1{
+	font-size:28px;
+	overflow: hidden;
+    margin-bottom: 10px;
+}
+.product-slogan{
+	font-size:12px;
+	margin-bottom: 10px;
+}
+.product-price{
+	margin-bottom: 10px;
+}
+.product-price-info{
+	color: #CA141D;
+	font-size:18px;
+	margin-right: 30px;
+}
+.product-activity-list{
+	height:28px;
+	line-height: 28px;
+}
+.product-activity-list li{
+	float: left;
+	margin-right: 20px;
+	font-size:12px;
+	
+}
+.product-activity-list li i{
+	display: inline-block;
+	width:13px;
+	height: 12px;
+	background: url(../img/complex3.png) -263px -4px no-repeat;
+}
+.line{
+	line-height: 1px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;	
+}
+.product-pulldown{
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.product-pulldown label{
+	width:75px;
+	margin-right:20px;
+	line-height: 28px;
+}
+.product-gift-btn{
+	display: inline-block;
+	height:28px;
+	line-height: 24px;
+	border:1px solid #d6d6d6;
+	border-radius:2px;
+	color:#888;
+	position: relative;
+	padding:0 10px 0 15px;
+}
+.product-gift-btn i{
+	display: inline-block;
+	width:9px;
+	height:9px;
+	background: url(../img/complex3.png) -63px -1px no-repeat;
+	margin-left: 10px;
+}
+.product-description{
+	line-height: 28px;
+}
+.product-description em{
+	display: inline-block;
+	width:1px;
+	height:12px;
+	background: #e6e6e6;
+	margin:0 15px;
+	position: relative;
+	top:3px;
+}
+.product-pulldown span{
+	line-height: 28px;
+} 
+.product-choose{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.product-choose label{
+	float: left;
+	margin-right:40px;
+	line-height: 38px;
+}
+.product-choose-details li{
+	float:left;
+	margin-right:10px;	
+	width:145px;
+	height:40px;	
+	border-radius: 2px;
+	line-height: 38px;
+	text-align: center;
+}
+.product-choose-details a:hover{
+	border:1px solid #3A3A3A;
+}
+.selected{
+	border:1px solid #CA141D;
+}
+.product-choose-details li a{
+	display:block;
+    border:1px solid #a4a4a4;
+}
+.product-choose-details img{
+	float:left;
+	margin: 5px 0 5px;	
+}
+.product-pulldown-btn{
+	display: inline-block;
+	border:1px solid #d6d6d6;
+	border-radius: 2px;
+	height:30px;
+	line-height: 28px;
+	padding:0 25px 5px 25px;
+	margin-left: -7px;
+	
+}
+/*.product-pulldown-btn i{
+	display: inline-block;
+	width:15px;
+	height:15px;
+	background: url(../img/complex3.png) 0px 0px no-repeat;
+}*/
+.product-description{
+	font-size: 12px;
+}
+.product-description label{
+	margin-right: 30px;
+}
+.product-description p{
+	font-size: 12px;
+	color: #CA141D;
+}
